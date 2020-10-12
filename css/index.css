@@ -1,0 +1,372 @@
+body {
+    font-family: "Century Gothic";
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    position: fixed;
+    width: 100vw;
+    background-color: #000000;
+    z-index: 2;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #4a0101;
+}
+
+.navbar-inverse {
+    border-top: 0px;
+    border-color: #4a0101;
+}
+
+.navP {
+    float: right;
+}
+
+.logoN {
+    width: 13%;
+}
+
+.row.content {
+    height: 450px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {
+        height: auto;
+    }
+    .logoF {
+        width: 70vw;
+    }
+    .logoN {
+        width: 21vw;
+    }
+    .navP {
+        float: none;
+        text-align: center;
+    }
+    .section {
+        width: 100vw !important;
+    }
+    .fT {
+        padding: 0px 30px;
+        margin-top: 2.5vh;
+        font-size: medium !important;
+    }
+    .goAboutF {
+        width: 60% !important;
+        margin-top: 8vh;
+    }
+    .goReportsS {
+        width: 60% !important;
+    }
+    .aboutP {
+        font-size: 4.2vw !important;
+        font-family: sans-serif !important;
+    }
+    .aboutT {
+        font-size: 17vw !important;
+        font-family: sans-serif !important;
+    }
+    .aboutI {
+        margin: 0% 7% !important;
+        padding-top: 15% !important;
+    }
+    .reportsI {
+        margin: 0% 7% !important;
+        padding-top: 15% !important;
+    }
+    .reportsT {
+        font-size: 17vw !important;
+        font-family: sans-serif !important;
+    }
+    .reportsAll {
+        display: block !important;
+    }
+    .oneReport {
+        width: 100% !important;
+        font-size: large !important;
+        font-family: sans-serif !important;
+        padding-top: 1vh !important;
+    }
+    .fileRR {
+        padding-top: 0% !important;
+    }
+    .fileR {
+        width: 20vw !important;
+    }
+    .goTeamS {
+        width: 60% !important;
+    }
+    .teamI {
+        margin: 0% 7% !important;
+        padding-top: 15% !important;
+    }
+    .teamT {
+        font-size: 17vw !important;
+        font-family: sans-serif !important;
+    }
+    .teamAll {
+        padding-top: 0% !important;
+        width: 100% !important;
+        display: block !important;
+    }
+    .oneTeam {
+        width: 100% !important;
+        font-size: 6vw !important;
+        text-align: -webkit-center !important;
+        display: grid !important;
+        font-family: sans-serif !important;
+    }
+    .photos {
+        margin-top: 2% !important;
+        width: 28% !important;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .aboutP {
+        font-size: 3.7vw !important;
+    }
+    .reportsT {
+        font-size: 15vw !important;
+    }
+    .reportsAll {
+        padding-top: 1% !important;
+    }
+    .oneReport {
+        font-size: larger !important;
+    }
+    .fileR {
+        width: 16vw !important;
+    }
+    .teamT {
+        font-size: 15vw !important;
+    }
+    .oneTeam {
+        font-size: 5vw !important;
+    }
+    .photos {
+        width: 22% !important;
+    }
+}
+
+.section {
+    height: 100vh;
+    width: 99.1vw;
+}
+
+.first {
+    background-image: url("../images/firstHeader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #848484c4;
+    background-blend-mode: multiply;
+    background-position: center;
+    color: white;
+}
+
+.logoF {
+    padding-top: 30vh;
+}
+
+.fT {
+    font-size: large;
+    padding-top: 2%;
+}
+
+.inB {
+    opacity: 70%;
+    z-index: 0;
+}
+
+.goAboutF {
+    color: black;
+    border-radius: 5%;
+    border-width: 3px;
+    width: 15%;
+    height: 4%;
+    border-color: #4a0101;
+    background-color: white;
+    margin-top: 5vh;
+    font-size: large;
+    transition-duration: 0.5s;
+}
+
+.goAboutF:hover {
+    transition-duration: 0.5s;
+    background-color: #4a0101;
+    color: white;
+    border-color: white;
+}
+
+.downI {
+    height: 50%;
+}
+
+.about {
+    background-color: #272727;
+}
+
+.aboutI {
+    margin: 0% 15%;
+    padding-top: 3%;
+    height: 100%;
+    background-color: #8484849c;
+    color: white;
+    box-shadow: 0px 0px 700px #888888;
+}
+
+.aboutT {
+    font-size: 6vw;
+    color: #4a0101;
+}
+
+.aboutP {
+    font-size: 1.5vw;
+    padding: 2% 3%;
+}
+
+.goReportsS {
+    color: black;
+    border-radius: 5%;
+    width: 30%;
+    height: 5%;
+    border-color: #4a0101;
+    background-color: gainsboro;
+    margin-top: 4vh;
+    font-size: x-large;
+    transition-duration: 0.5s;
+}
+
+.goReportsS:hover {
+    transition-duration: 0.5s;
+    background-color: #4a0101;
+    color: white;
+    border-color: white;
+}
+
+.reports {
+    background-color: #751212;
+}
+
+.reportsI {
+    margin: 0% 15%;
+    padding-top: 3%;
+    height: 100%;
+    background-color: #3b69799c;
+    color: white;
+    box-shadow: 0px 0px 700px #e0dcdc;
+}
+
+.reportsT {
+    font-size: 6vw;
+    color: #ab9b2e;
+    font-weight: bold;
+}
+
+.reportsAll {
+    padding-top: 4%;
+    width: 100%;
+    display: flex;
+}
+
+.oneReport {
+    width: 33%;
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+.fileRR {
+    padding-top: 10%;
+}
+
+.fileB {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.fileR {
+    width: 13vw;
+}
+
+.goTeamS {
+    color: black;
+    border-radius: 5%;
+    width: 30%;
+    height: 5%;
+    border-color: #4a0101;
+    background-color: gainsboro;
+    margin-top: 12vh;
+    font-size: x-large;
+    transition-duration: 0.5s;
+}
+
+.goTeamS:hover {
+    transition-duration: 0.5s;
+    background-color: #4a0101;
+    color: white;
+    border-color: white;
+}
+
+.team {
+    background-color: #796e1e;
+}
+
+.teamI {
+    margin: 0% 15%;
+    padding-top: 7%;
+    height: 100%;
+    background-color: #3c272266;
+    color: white;
+    box-shadow: 0px 0px 700px #334236;
+}
+
+.teamT {
+    font-size: 6vw;
+    color: #611111;
+}
+
+.teamAll {
+    padding-top: 5%;
+    width: 100%;
+    display: flex;
+}
+
+.oneTeam {
+    width: 25%;
+    font-size: 1.8vw;
+}
+
+.photos {
+    margin-top: 20%;
+    border-radius: 50%;
+    width: 93%;
+    box-shadow: 5px 5px 70px #9fb1a7;
+    border: 4px solid lightcyan;
+    transition-duration: 0.3s;
+}
+
+.photos:hover {
+    transition-duration: 0.3s;
+    filter: grayscale(1);
+}

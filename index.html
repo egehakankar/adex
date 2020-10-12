@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ADEX</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand scroller" href="#first"><img class="logoN" src="images/logoB.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navP">
+                    <li class="active navSc firstS"><a class="scroller" href="#first">Home</a></li>
+                    <li class="navSc"><a class="scroller" href="#about">About</a></li>
+                    <li class="navSc"><a class="scroller" href="#reports">Reports</a></li>
+                    <li class="navSc"><a class="scroller" href="#team">Team</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="all">
+        <div class="text-center">
+            <div class="first section" id="first">
+                <img class="logoF" src="images/logoW.png">
+                <p class="fT">
+                    Adex is a video game digital distribution service. The service provides its users with various video games of different genres.
+                </p>
+                <button class="goAboutF scroller inB" id="goAboutF" href="#about">
+                    About
+                    <img class="downI" src="images/down.png">
+                </button>
+            </div>
+            <div class="about section" id="about">
+                <div class="aboutI">
+                    <t1 class="aboutT">
+                        About
+                    </t1>
+                    <p class="aboutP">
+                        Adex is a video game digital distribution service. The service provides its users with various video games of different genres. Via Adex, game development companies find the opportunity to share the games they developed with the world. The publisher companies
+                        can directly communicate with developer companies and work with them. The database design of the platform is strong and efficient, such that it can manage a large list of different games. This way, its users find the opportunity
+                        to obtain a large game library. The use of such a database also allows for easy tracking of the games developed and published by developer companies. This platform is suitable for use to any customer that wishes to purchase and
+                        play games, and also for both publisher and developer companies which may want to gain profit from exchanges made with the customers.
+
+                    </p>
+                    <button class="goReportsS scroller inB" href="#reports">
+                        Reports
+                        <img class="downI" src="images/down.png">
+                    </button>
+                </div>
+            </div>
+            <div class="reports section" id="reports">
+                <div class="reportsI">
+                    <t1 class="reportsT">
+                        Reports
+                    </t1>
+                    <div class="reportsAll">
+                        <div class="oneReport">Project Proposal Report
+                            <form class="fileRR" method="get" action="">
+                                <button class="fileB" type="submit"><img class = "fileR" type="submit" src="./images/fileBl.png"></button>
+                            </form>
+                        </div>
+                        <div class="oneReport">Design Report
+                            <form class="fileRR" method="get" action="">
+                                <button class="fileB" type="submit"><img class = "fileR" type="submit" src="./images/fileBl.png"></button>
+                            </form>
+                        </div>
+                        <div class="oneReport">Final Report
+                            <form class="fileRR" method="get" action="">
+                                <button class="fileB" type="submit"><img class = "fileR" type="submit" src="./images/fileBl.png"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <button class="goTeamS scroller inB" id="goTeamS" href="#team">
+                        Team
+                        <img class="downI" src="images/down.png">
+                    </button>
+                </div>
+            </div>
+            <div class="team section" id="team">
+                <div class="teamI">
+                    <t1 class="teamT">
+                        Team
+                    </t1>
+                    <div class="teamAll">
+                        <div class="oneTeam">Ege Hakan Karaağaç
+                            <img class="photos" src="images/Hakan.jpg">
+                        </div>
+                        <div class="oneTeam">Olcay Akman
+                            <img class="photos" src="images/Ocay.jpg">
+                        </div>
+                        <div class="oneTeam">Rumeysa Özaydın
+                            <img class="photos" src="images/Rumeysa.jpg">
+                        </div>
+                        <div class="oneTeam">Muhammet Kamil Gök
+                            <img class="photos" src="images/Kamil.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>Copyright © 2020 All Rights Reserved by Help.Others.</p>
+    </footer>
+
+</body>
+<script>
+    $(".scroller").on('click', function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: ($(target).offset().top)
+        }, 1000);
+    });
+    $(".navSc").click(function() {
+        $(".navSc").removeClass("active");
+        $(this).addClass("active");
+        $(".navbar-toggle").click();
+    });
+    $(".navbar-brand").click(function() {
+        $(".navSc").removeClass("active");
+        $(".firstS").addClass("active");
+    });
+</script>
+
+</html>
