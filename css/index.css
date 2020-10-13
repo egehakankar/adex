@@ -161,9 +161,6 @@
         }
         
         @media screen and (max-height: 800px) {
-            .aboutP {
-                font-size: 3.7vw !important;
-            }
             .reportsT {
                 font-size: 15vw !important;
             }
