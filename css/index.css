@@ -77,7 +77,7 @@ footer {
         width: 60% !important;
     }
     .aboutP {
-        font-size: 4.2vw !important;
+        font-size: 2.5vw !important;
         font-family: sans-serif !important;
     }
     .aboutT {
@@ -137,6 +137,17 @@ footer {
     .photos {
         margin-top: 2% !important;
         width: 28% !important;
+    }
+}
+@media screen and (max-width: 550px)
+.aboutP {
+    font-size: 3vw !important;
+    font-family: sans-serif !important;
+}
+@media screen and (max-width: 430px) {
+    .aboutP {
+        font-size: 4.2vw !important;
+        font-family: sans-serif !important;
     }
 }
 
